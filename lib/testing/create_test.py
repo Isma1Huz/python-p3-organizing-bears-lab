@@ -6,7 +6,7 @@ connection = sqlite3.connect(":memory:")
 
 cursor = connection.cursor()
 
-sql_file = open("lib/create.sql")
+sql_file = open("./create.sql")
 sql_as_string = sql_file.read()
 cursor.executescript(sql_as_string)
 
